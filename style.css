@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+html {
+    font-size: 18px;
+}
+body, button
+{
+    font-family: 'Epilogue', sans-serif;
+    font-weight: 500;
+    color: hsl(0, 0%, 98%);
+}
+header .headerContainer {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2rem;
+    align-items: center;
+    font-size: 14px;
+}
+header .headerContainer .left {
+    width:180px;
+    display: flex;
+    align-items: center;
+}
+header .headerContainer .right{
+    width: calc(100% - 180px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color:  hsl(0, 0%, 41%);
+}
+header .headerContainer .right nav .navLinks , header .headerContainer .right .logReg {
+    display: flex;
+    align-items: center;
+}
+header .headerContainer .right li {
+    margin-right: 2rem;
+    padding:2rem 0;
+}
+header .headerContainer .right nav .navLinks .features .featCont span:first-child, header .headerContainer .right nav .navLinks .company .compCont span:first-child{
+    margin-right: 0.5rem;
+}
+header .headerContainer .right nav .navLinks .features .featCont {
+    position: relative;
+}
+header .headerContainer .right nav .navLinks .features .featList
+{
+    top: 2rem;
+    position: absolute;
+    width: 180px;
+    box-shadow: rgba(107, 112, 117, 0.2) 0px 8px 24px;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    transform: translate(-90px,0);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease-in-out;
+}
+
+header .headerContainer .right nav .navLinks .features:hover .featList{
+    pointer-events: auto;
+    opacity: 1 ;
+    transition: all 0.3s ease-in-out;
+}
+header .headerContainer .right nav .navLinks .features .fa-solid {
+    transition: all 0.3s ease-in-out;
+}
+header .headerContainer .right nav .navLinks .features:hover .fa-solid {
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out;=
+}
+header .headerContainer .right nav .navLinks .features .featList li {
+    margin-right: 0;
+    margin-bottom: 0.9rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 14px;
+}
+header .headerContainer .right nav .navLinks .features .featList li span:first-child
+{
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0rem;
+}
+header .headerContainer .right nav .navLinks .features .featList li:last-child{
+    margin-bottom: 0;
+}
+header .headerContainer .right nav .navLinks .features .featList li span:last-child
+{
+    width: 80px;
+    text-align: start;
+}
+header .headerContainer .right nav .navLinks .company .compCont {
+    position: relative;
+}
+header .headerContainer .right nav .navLinks .company .compList{
+    position: absolute;
+    top: 2rem;
+    width: 120px;
+    box-shadow: rgba(107, 112, 117, 0.2) 0px 8px 24px;
+    padding: 1rem 1.5rem;
+    border-radius: 10px;
+    opacity: 0;
+    pointer-events: none;
+}
+header .headerContainer .right nav .navLinks .company:hover .compList{
+  opacity: 1;
+  pointer-events: auto;
+  transition: all 0.3s ease-in-out;
+}
+header .headerContainer .right nav .navLinks .company .compList li {
+    margin-right: 0;
+    margin-bottom: 0.9rem;
+    padding: 0;
+}
+header .headerContainer .right nav .navLinks .company .compList li:last-child{
+    margin-bottom: 0;
+}
+header .headerContainer .right nav .navLinks .company .fa-solid {
+    transition: all 0.3s ease-in-out;
+}
+header .headerContainer .right nav .navLinks .features:hover .fa-solid {
+    transform: rotate(0deg);
+    transition: all 0.3s ease-in-out;=
+}
+header .headerContainer .right nav li:hover,header .headerContainer .right .logReg li:hover {
+    transition: all 0.3s ease-in-out;
+    color:hsl(0, 0%, 0%);
+}
+header .headerContainer .right nav .navLinks .features .featList li {
+    color: hsl(0, 0%, 41%);
+    padding: 0;
+}
+header .headerContainer .right nav .navLinks .features .featList li:hover {
+    color: hsl(0, 0%, 0%);
+    transition: all 0.3s ease-in-out;
+}
+header .headerContainer .right nav .navLinks .company .compList li{
+    color: hsl(0, 0%, 41%);
+}
+header .headerContainer .right nav .navLinks .company .compList li:hover{
+    color: hsl(0, 0%, 0%);
+    transition: all 0.3s ease-in-out;
+
+}
+.btn {
+    padding: 0.6rem 1rem;
+    border-radius: 10px;
+    outline: none;
+    border: 1px solid  hsl(0, 0%, 41%);
+    font-size: 14px;
+    color:  hsl(0, 0%, 41%);
+    background-color: hsl(0, 0%, 100%);
+}
+.btn-style:hover{
+  color:hsl(0, 0%, 0%);
+  border-color: hsl(0, 0%, 0%);
+  transition: all 0.3s ease-in-out;
+}
