@@ -11,156 +11,203 @@ body, button
 {
     font-family: 'Epilogue', sans-serif;
     font-weight: 500;
-    color: hsl(0, 0%, 98%);
-}
-header .headerContainer {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 2rem;
-    align-items: center;
-    font-size: 14px;
-}
-header .headerContainer .left {
-    width:180px;
-    display: flex;
-    align-items: center;
-}
-header .headerContainer .right{
-    width: calc(100% - 180px);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    background-color: hsl(0, 0%, 98%);
     color:  hsl(0, 0%, 41%);
 }
-header .headerContainer .right nav .navLinks , header .headerContainer .right .logReg {
+.btn{
+    padding: 0.7rem 1.1rem;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+}
+header{
+    font-size: 16px;
+}
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    z-index: 100000;
+}
+.headerContainer .left {
+    width: 180px;
     display: flex;
     align-items: center;
 }
-header .headerContainer .right li {
-    margin-right: 2rem;
-    padding:2rem 0;
+.headerContainer .right
+{
+    width: calc(100% - 180px);
 }
-header .headerContainer .right nav .navLinks .features .featCont span:first-child, header .headerContainer .right nav .navLinks .company .compCont span:first-child{
+.right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right .navLinks{
+    display: flex;
+    align-items: center;
+}
+.right .navLinks > li {
+    margin-right: 2rem;
+    padding: 2rem 0;
+    transition: all 0.3s ease-in-out;
+}
+.right .navLinks > li:hover, .right .logReg  > li:hover {
+    color: hsl(0, 0%, 8%);
+}
+.navLinks .featCont span:first-child{
     margin-right: 0.5rem;
 }
-header .headerContainer .right nav .navLinks .features .featCont {
+.navLinks .compCont span:first-child{
+    margin-right: 0.5rem;
+}
+.right .features{
     position: relative;
 }
-header .headerContainer .right nav .navLinks .features .featList
-{
-    top: 2rem;
+.right .features .featList{
     position: absolute;
-    width: 180px;
-    box-shadow: rgba(107, 112, 117, 0.2) 0px 8px 24px;
-    padding: 1rem 1.5rem;
-    border-radius: 10px;
-    transform: translate(-90px,0);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    top: 3.8rem;
+    padding: 1rem;
+    width: 150px;
+    border-radius: 12px;
+    transform: translate(-45%,0);
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease-in-out;
 }
-
-header .headerContainer .right nav .navLinks .features:hover .featList{
+.fa-solid {
+    transition: all 0.3s ease-in-out;
+}
+.right .navLinks > li:hover .featList{
+    opacity: 1;
     pointer-events: auto;
-    opacity: 1 ;
+}
+.right .navLinks > li:hover .fa-solid {
+    transform: rotate(0);
     transition: all 0.3s ease-in-out;
 }
-header .headerContainer .right nav .navLinks .features .fa-solid {
-    transition: all 0.3s ease-in-out;
-}
-header .headerContainer .right nav .navLinks .features:hover .fa-solid {
-    transform: rotate(0deg);
-    transition: all 0.3s ease-in-out;=
-}
-header .headerContainer .right nav .navLinks .features .featList li {
-    margin-right: 0;
-    margin-bottom: 0.9rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    font-size: 14px;
-}
-header .headerContainer .right nav .navLinks .features .featList li span:first-child
-{
-    width: 20px;
-    height: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 0rem;
-}
-header .headerContainer .right nav .navLinks .features .featList li:last-child{
-    margin-bottom: 0;
-}
-header .headerContainer .right nav .navLinks .features .featList li span:last-child
-{
-    width: 80px;
-    text-align: start;
-}
-header .headerContainer .right nav .navLinks .company .compCont {
+.right .company{
     position: relative;
 }
-header .headerContainer .right nav .navLinks .company .compList{
+.right .company .compList{
     position: absolute;
-    top: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    top: 3.8rem;
+    padding: 1rem;
     width: 120px;
-    box-shadow: rgba(107, 112, 117, 0.2) 0px 8px 24px;
-    padding: 1rem 1.5rem;
-    border-radius: 10px;
+    border-radius: 12px;
     opacity: 0;
     pointer-events: none;
-}
-header .headerContainer .right nav .navLinks .company:hover .compList{
-  opacity: 1;
-  pointer-events: auto;
-  transition: all 0.3s ease-in-out;
-}
-header .headerContainer .right nav .navLinks .company .compList li {
-    margin-right: 0;
-    margin-bottom: 0.9rem;
-    padding: 0;
-}
-header .headerContainer .right nav .navLinks .company .compList li:last-child{
-    margin-bottom: 0;
-}
-header .headerContainer .right nav .navLinks .company .fa-solid {
     transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
 }
-header .headerContainer .right nav .navLinks .features:hover .fa-solid {
-    transform: rotate(0deg);
-    transition: all 0.3s ease-in-out;=
+.right .navLinks > li:hover .compList{
+    opacity: 1;
+    pointer-events: auto;
 }
-header .headerContainer .right nav li:hover,header .headerContainer .right .logReg li:hover {
-    transition: all 0.3s ease-in-out;
-    color:hsl(0, 0%, 0%);
-}
-header .headerContainer .right nav .navLinks .features .featList li {
+.right .company .compList li {
+    margin-bottom: 1rem;
     color: hsl(0, 0%, 41%);
-    padding: 0;
-}
-header .headerContainer .right nav .navLinks .features .featList li:hover {
-    color: hsl(0, 0%, 0%);
     transition: all 0.3s ease-in-out;
 }
-header .headerContainer .right nav .navLinks .company .compList li{
+.right .company .compList li:hover{
+    color: hsl(0, 0%, 8%);
+}
+.right .company .compList li:last-child {
+    margin-bottom: 0rem;
+}
+.right .features .featList li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
     color: hsl(0, 0%, 41%);
-}
-header .headerContainer .right nav .navLinks .company .compList li:hover{
-    color: hsl(0, 0%, 0%);
     transition: all 0.3s ease-in-out;
+}
+.right .features .featList li:hover{
+    color: hsl(0, 0%, 8%);
+}
+.right .features .featList li:last-child
+{
+    margin-bottom: 0rem;
+}
+.right .features .featList li span:first-child
+{
+   width: 34px;
+}
+.right .features .featList li span:last-child
+{
+   width: 80px;
+}
+.right .logReg
+{
+    display: flex;
+    align-items: center;
+}
+.right .logReg > li {
+    margin-right: 2rem;
+    transition: all 0.3s ease-in-out;
+}
+.btnStyle-1 {
+    border: 2px solid hsl(0, 0%, 41%);
+    transition: all 0.3s ease-in-out;
+}
+.btnStyle-1:hover{
+    border-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 8%);
+}
+.container{
+    max-width: 1124px;
+    width: 90%;
+    margin: auto;
+}
+.heroSec {
+    display: flex;
+    height: calc(100vh - 125.6px - 6.5rem);
+    margin-top: 3.5rem;
+    margin-bottom: 3rem;
+    z-index: -100000;
+}
+.heroSec .left{
+    width: 50%;
+    margin-right: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.heroSec .left h1 {
+    font-size: 3.3rem;
+    width: 80%;
+    padding-top: 4rem;
+    color: hsl(0, 0%, 8%);
+    line-height: 1.2;
+}
+.heroSec .right{
+    width: 50%;
+}
+.heroSec .right img {
+    width: 100%;
+    height: 100%;
+}
+.btnStyle-2 {
+    background-color: hsl(0, 0%, 8%);
+    color: hsl(0, 0%, 98%);
+    font-weight: 700;
+    border: 2px solid hsl(0, 0%, 8%);
+    transition: all 0.3s ease-in-out;
+}
+.btnStyle-2:hover{
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 8%);
+}
+.heroSec .left p {
+    line-height: 1.6;
 
 }
-.btn {
-    padding: 0.6rem 1rem;
-    border-radius: 10px;
-    outline: none;
-    border: 1px solid  hsl(0, 0%, 41%);
-    font-size: 14px;
-    color:  hsl(0, 0%, 41%);
-    background-color: hsl(0, 0%, 100%);
-}
-.btn-style:hover{
-  color:hsl(0, 0%, 0%);
-  border-color: hsl(0, 0%, 0%);
-  transition: all 0.3s ease-in-out;
+.heroSec .left .compNames{
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
 }
