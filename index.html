@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
     integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="./script.js" defer></script>
   <title>Intro section with dropdown navigation</title>
 </head>
 
@@ -22,72 +23,78 @@
         <img src="./images/logo.svg" alt="logo">
       </div>
       <div class="right">
+        <div class="closeMenu">
+          <img src="./images/icon-close-menu.svg"">
+        </div>
         <nav>
-          <ul class="navLinks">
-            <li class="features">
-              <div class="featCont">
-                <span>Features</span><span><i class="fa-solid fa-angle-up fa-rotate-180"></i></span>
+          <ul class=" navLinks">
+          <li class="features">
+            <div class="featCont">
+              <span>Features</span><span><i class="fa-solid fa-angle-up fa-rotate-180"></i></span>
+            </div>
+            <ul class="featList">
+              <li>
+                <span><img src="./images/icon-todo.svg" alt="icon-todo"></span>
+                <span>Todo List</span>
+              </li>
+              <li>
+                <span><img src="./images/icon-calendar.svg" alt="icon-calendar"></span>
+                <span>Calender</span>
+              </li>
+              <li>
+                <span><img src="./images/icon-reminders.svg" alt="icon-reminders"></span>
+                <span>Reminders</span>
+              </li>
+              <li>
+                <span><img src="./images/icon-planning.svg" alt="icon-planning"></span>
+                <span>Planning</span>
+              </li>
+            </ul>
+          </li>
+          <li class="company">
+            <div class="compCont">
+              <span>Company</span><span><i class="fa-solid fa-angle-up fa-rotate-180"></i></span>
+            </div>
+            <ul class="compList">
+              <div>
+                <li>History</li>
+                <li>Our Team</li>
+                <li>Blog</li>
               </div>
-              <ul class="featList">
-                <li>
-                  <span><img src="./images/icon-todo.svg" alt="icon-todo"></span>
-                  <span>Todo List</span>
-                </li>
-                <li>
-                  <span><img src="./images/icon-calendar.svg" alt="icon-calendar"></span>
-                  <span>Calender</span>
-                </li>
-                <li>
-                  <span><img src="./images/icon-reminders.svg" alt="icon-reminders"></span>
-                  <span>Reminders</span>
-                </li>
-                <li>
-                  <span><img src="./images/icon-planning.svg" alt="icon-planning"></span>
-                  <span>Planning</span>
-                </li>
-              </ul>
-            </li>
-            <li class="company">
-              <div class="compCont">
-                <span>Company</span><span><i class="fa-solid fa-angle-up fa-rotate-180"></i></span>
-              </div>
-              <ul class="compList">
-                <div>
-                  <li>History</li>
-                  <li>Our Team</li>
-                  <li>Blog</li>
-                </div>
-              </ul>
-            </li>
-            <li>Careers</li>
-            <li>About</li>
+            </ul>
+          </li>
+          <li>Careers</li>
+          <li>About</li>
           </ul>
-        </nav>
-        <ul class="logReg">
-          <li>Login</li>
-          <button class="btn btnStyle-1">Register</button>
-        </ul>
-      </div>
-    </div>
-    <section class="heroSec container">
-      <div class="left">
-        <h1>Make <br> remote work</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste ipsam, assumenda officia error consectetur
-          nostrum deserunt. Saepe nisi reprehenderit quo?</p>
-        <div>
-          <button class="btn btnStyle-2">Learn more</button>
+          </nav>
+          <ul class="logReg">
+            <li>Login</li>
+            <button class="btn btnStyle-1">Register</button>
+          </ul>
         </div>
-        <div class="compNames">
-          <img src="./images/client-databiz.svg" alt="client-databiz">
-          <img src="./images/client-audiophile.svg" alt="client-audiophile">
-          <img src="./images/client-meet.svg" alt="client-meet">
-          <img src="./images/client-maker.svg" alt="client-maker">
+        <div class="hamburger">
+          <img src="./images/icon-menu.svg" alt="hamburger">
         </div>
       </div>
-      <div class="right">
-        <img src="./images/image-hero-desktop.png" alt="">
-      </div>
-    </section>
+      <section class="heroSec container">
+        <div class="left">
+          <h1>Make remote work</h1>
+          <p>Get your team in sync, no matter your location. Streamline processes, create team rituals, and watch
+            productivity soar</p>
+          <div>
+            <button class="btn btnStyle-2">Learn more</button>
+          </div>
+          <div class="compNames">
+            <img src="./images/client-databiz.svg" alt="client-databiz">
+            <img src="./images/client-audiophile.svg" alt="client-audiophile">
+            <img src="./images/client-meet.svg" alt="client-meet">
+            <img src="./images/client-maker.svg" alt="client-maker">
+          </div>
+        </div>
+        <div class="right">
+          <img src="./images/image-hero-desktop.png" alt="">
+        </div>
+      </section>
   </header>
 </body>
 

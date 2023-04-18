@@ -52,6 +52,7 @@ header{
     margin-right: 2rem;
     padding: 2rem 0;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 .right .navLinks > li:hover, .right .logReg  > li:hover {
     color: hsl(0, 0%, 8%);
@@ -76,6 +77,8 @@ header{
     opacity: 0;
     pointer-events: none;
     transition: all 0.3s ease-in-out;
+    background-color: hsl(0, 0%, 98%);
+    cursor: default;
 }
 .fa-solid {
     transition: all 0.3s ease-in-out;
@@ -103,6 +106,8 @@ header{
     transition: all 0.3s ease-in-out;
     display: flex;
     justify-content: center;
+    background-color: hsl(0, 0%, 98%);
+    cursor: default;
 }
 .right .navLinks > li:hover .compList{
     opacity: 1;
@@ -112,6 +117,7 @@ header{
     margin-bottom: 1rem;
     color: hsl(0, 0%, 41%);
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 .right .company .compList li:hover{
     color: hsl(0, 0%, 8%);
@@ -125,6 +131,7 @@ header{
     margin-bottom: 1rem;
     color: hsl(0, 0%, 41%);
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 .right .features .featList li:hover{
     color: hsl(0, 0%, 8%);
@@ -149,43 +156,44 @@ header{
 .right .logReg > li {
     margin-right: 2rem;
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 .btnStyle-1 {
     border: 2px solid hsl(0, 0%, 41%);
     transition: all 0.3s ease-in-out;
+    cursor: pointer;
 }
 .btnStyle-1:hover{
     border-color: hsl(0, 0%, 8%);
     color: hsl(0, 0%, 8%);
 }
 .container{
-    max-width: 1124px;
+    max-width: 1024px;
     width: 90%;
     margin: auto;
 }
 .heroSec {
     display: flex;
-    height: calc(100vh - 125.6px - 6.5rem);
-    margin-top: 3.5rem;
-    margin-bottom: 3rem;
+    height: calc(100vh - 126px );
+    padding-bottom: 6rem;
     z-index: -100000;
 }
 .heroSec .left{
-    width: 50%;
-    margin-right: 6rem;
+    width: 55%;
+    margin-right: 5rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 .heroSec .left h1 {
-    font-size: 3.3rem;
-    width: 80%;
-    padding-top: 4rem;
+    font-size: 4.3rem;
+    padding-top: 8rem;
     color: hsl(0, 0%, 8%);
     line-height: 1.2;
+    font-weight: 700;
 }
 .heroSec .right{
-    width: 50%;
+    width: 45%;
 }
 .heroSec .right img {
     width: 100%;
@@ -195,19 +203,212 @@ header{
     background-color: hsl(0, 0%, 8%);
     color: hsl(0, 0%, 98%);
     font-weight: 700;
-    border: 2px solid hsl(0, 0%, 8%);
+    border: 1px solid hsl(0, 0%, 8%);
     transition: all 0.3s ease-in-out;
+    padding: 1rem 1.5rem;
+    font-size: 16px;
 }
 .btnStyle-2:hover{
     background-color: hsl(0, 0%, 98%);
     color: hsl(0, 0%, 8%);
 }
 .heroSec .left p {
+    width: 90%;
     line-height: 1.6;
-
+    font-size: 18px;
 }
 .heroSec .left .compNames{
     display: flex;
     align-items: center;
     justify-content:space-between;
+    flex-wrap: wrap;
 }
+.heroSec .left .compNames img {
+    display: inline-block;
+    margin-bottom: 1rem;
+    margin-right: 1rem;
+}
+.hamburger{
+    display: none;
+}
+.closeMenu{
+    display: none;
+}
+/* * Media Screens */
+@media (max-width:1054px)
+{
+    .heroSec .left h1 {
+        font-size: 3.5rem;
+    }
+}
+@media (max-width:935px)
+{
+    .heroSec .left h1 {
+        font-size: 3rem;
+    }
+}
+@media (max-width:885px)
+{
+    .hamburger{
+        display: block;
+    }
+    .closeMenu{
+        display: block;
+    }
+  .headerContainer  .right {
+        opacity: 0;
+        pointer-events: 0;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height: 100vh;
+        width: 70vw;
+        min-width: 280px;
+        align-items: flex-start;
+        background-color: hsl(0, 0%, 98%);
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 2rem;
+        padding-top: 1rem;
+        box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    }
+    .headerContainer  .right .closeMenu{
+        align-self: flex-end;
+        margin-bottom: 1rem;
+    }
+    .headerContainer  .right .navLinks{
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 1rem;
+    }
+    .headerContainer  .right .navLinks > li {
+        margin-right: 0;
+        margin: 1rem 0;
+        padding: 0;
+    }
+    .right .features .featList {
+        margin-left: 1rem;
+    }
+    .right .features .featList{
+        box-shadow: none;
+        top: 1rem;
+        border-radius: 0px;
+        transform: translate(0,0%);
+        transition: none;
+        background-color:none;
+    }
+    .right .navLinks > li:hover .featList{
+        position: relative;
+        transform: translate(0,0);
+        transition: all 0.1s ease-in-out;
+    }
+    .right .company .compList{
+        box-shadow: none;
+        top: 1rem;
+        border-radius: 0px;
+        transition: none;
+        display: flex;
+        justify-content: center;
+        background-color: hsl(0, 0%, 98%);
+        cursor: default;
+    }
+    .right .navLinks > li:hover .compList{
+        opacity: 1;
+        pointer-events: auto;
+        position: relative;
+        transition: all 0.1s ease-in-out;
+    }
+    .headerContainer  .right .logReg{
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+    }
+    .headerContainer  .right .logReg > li {
+        margin-bottom: 1rem;
+        margin-right: 0;
+    }
+    .headerContainer  .right .logReg .btnStyle-1{
+        width: 100%;
+    }
+    .container{
+        width: 100%;
+    }
+    .heroSec {
+        flex-direction: column;
+        margin-top: 2rem;
+        padding-bottom: 0rem;
+    }
+    .heroSec .left{
+        order: 1;
+        width: 90%;
+        text-align: center;
+        margin: auto;
+        height: 50%;
+    }
+    .heroSec .left h1 {
+        padding-top: 2rem;
+    }
+    .heroSec .left p{
+        width: 100%;
+    }
+    .heroSec .right{
+        width: 100%;
+        height: 50%;
+    }
+}
+@media (max-width:575px)
+{
+    .heroSec .left h1 {
+       font-size: 2.5rem;
+    }
+}
+@media (max-width:480px)
+{
+    .heroSec .left h1 {
+       font-size: 1.9rem;
+    }
+    .heroSec .left p {
+        font-size: 16px;
+     }
+     .heroSec .right{
+        height: 40%;
+     }
+     .heroSec .left{
+        height: 60%;
+     }
+}
+/* @media (max-width:815px)
+{
+    .heroSec .left h1 {
+        font-size: 2.5rem;
+    }
+    .heroSec .left p {
+        width: 100%;
+        line-height: 1.6;
+        font-size: 16px;
+    }
+}
+@media (max-width:800px)
+{
+    .container{
+        width: 100%;
+    }
+    .heroSec {
+        flex-direction: column;
+        margin-top: 2rem;
+    }
+    .heroSec .left{
+        order: 1;
+        width: 100%;
+        text-align: center;
+        width: 90%;
+        margin: auto;
+    }
+    .heroSec .left h1 {
+        padding-top: 1rem;
+    }
+    .heroSec .right{
+        width: 100%;
+        height: 50%;
+    }
+} */
