@@ -377,38 +377,3 @@ header{
         height: 60%;
      }
 }
-/* @media (max-width:815px)
-{
-    .heroSec .left h1 {
-        font-size: 2.5rem;
-    }
-    .heroSec .left p {
-        width: 100%;
-        line-height: 1.6;
-        font-size: 16px;
-    }
-}
-@media (max-width:800px)
-{
-    .container{
-        width: 100%;
-    }
-    .heroSec {
-        flex-direction: column;
-        margin-top: 2rem;
-    }
-    .heroSec .left{
-        order: 1;
-        width: 100%;
-        text-align: center;
-        width: 90%;
-        margin: auto;
-    }
-    .heroSec .left h1 {
-        padding-top: 1rem;
-    }
-    .heroSec .right{
-        width: 100%;
-        height: 50%;
-    }
-} */
