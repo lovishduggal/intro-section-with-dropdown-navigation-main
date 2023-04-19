@@ -174,8 +174,8 @@ header{
 }
 .heroSec {
     display: flex;
-    height: calc(100vh - 126px );
-    padding-bottom: 6rem;
+    height: calc(100vh - 126px);
+    padding-bottom: 10rem;
     z-index: -100000;
 }
 .heroSec .left{
