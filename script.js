@@ -21,7 +21,6 @@ arr.forEach((currentNode) => {
                     rightCont.style.opacity = '1';
                     rightCont.style.pointerEvents = 'auto';
                     bool = true;
-                    console.log('jiii');
                 }
             });
         }
