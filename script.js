@@ -1,6 +1,8 @@
 const hamBurger = document.querySelector('.hamburger');
 const rightCont = document.querySelector('.right');
 const closeMenu = document.querySelector('.closeMenu');
+const heroImg = document.querySelector('.heroSec .right img');
+console.log(heroImg);
 const arr = [hamBurger, closeMenu];
 let bool = false;
 arr.forEach((currentNode) => {
@@ -25,4 +27,11 @@ arr.forEach((currentNode) => {
             });
         }
     });
+});
+window.addEventListener('resize', () => {
+    if (window.innerWidth <= 880) {
+        heroImg.src = './images/image-hero-mobile.png';
+    } else {
+        heroImg.src = './images/image-hero-desktop.png';
+    }
 });

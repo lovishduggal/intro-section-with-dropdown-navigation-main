@@ -174,8 +174,8 @@ header{
 }
 .heroSec {
     display: flex;
-    height: calc(100vh - 126px);
-    padding-bottom: 10rem;
+    margin-bottom: 3rem;
+    height: calc(100vh - 180px);
     z-index: -100000;
 }
 .heroSec .left{
@@ -184,6 +184,12 @@ header{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+}
+.heroSec .left > * {
+    margin-bottom: 1rem;
+}
+.heroSec .left div:last-child{
+    margin-bottom: 0rem;
 }
 .heroSec .left h1 {
     font-size: 4.3rem;
@@ -207,6 +213,7 @@ header{
     transition: all 0.3s ease-in-out;
     padding: 1rem 1.5rem;
     font-size: 16px;
+    margin-bottom: 2rem;
 }
 .btnStyle-2:hover{
     background-color: hsl(0, 0%, 98%);
@@ -336,7 +343,7 @@ header{
     .heroSec {
         flex-direction: column;
         margin-top: 2rem;
-        padding-bottom: 0rem;
+        margin-bottom: 3rem;
     }
     .heroSec .left{
         order: 1;
