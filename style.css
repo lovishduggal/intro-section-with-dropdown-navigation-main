@@ -174,8 +174,8 @@ header{
 }
 .heroSec {
     display: flex;
-    margin-bottom: 3rem;
-    height: calc(100vh - 180px);
+    margin-bottom: 4rem;
+    height: calc(100vh - 200px);
     z-index: -100000;
 }
 .heroSec .left{
@@ -242,6 +242,12 @@ header{
     display: none;
 }
 /* * Media Screens */
+@media (max-width:1154px)
+{
+    .heroSec .left h1 {
+        font-size: 4rem;
+    }
+}
 @media (max-width:1054px)
 {
     .heroSec .left h1 {
@@ -264,7 +270,7 @@ header{
     }
   .headerContainer  .right {
         opacity: 0;
-        pointer-events: 0;
+        pointer-events: none;
         position: absolute;
         top: 0;
         right: 0;
@@ -350,7 +356,7 @@ header{
         width: 90%;
         text-align: center;
         margin: auto;
-        height: 50%;
+        height: 55%;
     }
     .heroSec .left h1 {
         padding-top: 2rem;
@@ -360,14 +366,20 @@ header{
     }
     .heroSec .right{
         width: 100%;
-        height: 50%;
+        height: 45%;
     }
 }
-@media (max-width:575px)
+@media (max-width:605px)
 {
     .heroSec .left h1 {
        font-size: 2.5rem;
     }
+    .heroSec .right{
+        height: 40%;
+     }
+     .heroSec .left{
+        height: 60%;
+     }
 }
 @media (max-width:480px)
 {
@@ -376,11 +388,5 @@ header{
     }
     .heroSec .left p {
         font-size: 16px;
-     }
-     .heroSec .right{
-        height: 40%;
-     }
-     .heroSec .left{
-        height: 60%;
      }
 }

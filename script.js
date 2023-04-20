@@ -19,7 +19,7 @@ arr.forEach((currentNode) => {
             hamBurger.style.opacity = '1';
             hamBurger.style.pointerEvents = 'auto';
             window.addEventListener('resize', function () {
-                if (window.innerWidth > 880) {
+                if (window.innerWidth > 885) {
                     rightCont.style.opacity = '1';
                     rightCont.style.pointerEvents = 'auto';
                     bool = true;
@@ -28,8 +28,11 @@ arr.forEach((currentNode) => {
         }
     });
 });
+if (window.innerWidth <= 885) {
+    heroImg.src = './images/image-hero-mobile.png';
+}
 window.addEventListener('resize', () => {
-    if (window.innerWidth <= 880) {
+    if (window.innerWidth <= 885) {
         heroImg.src = './images/image-hero-mobile.png';
     } else {
         heroImg.src = './images/image-hero-desktop.png';
