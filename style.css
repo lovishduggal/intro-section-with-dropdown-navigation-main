@@ -174,12 +174,12 @@ header{
 }
 .heroSec {
     display: flex;
-    margin-bottom: 4rem;
-    height: calc(100vh - 200px);
+    margin-bottom: 6rem;
+    height: calc(100vh - 234px);
     z-index: -100000;
 }
 .heroSec .left{
-    width: 55%;
+    width: 50%;
     margin-right: 5rem;
     display: flex;
     flex-direction: column;
@@ -192,14 +192,14 @@ header{
     margin-bottom: 0rem;
 }
 .heroSec .left h1 {
-    font-size: 4.3rem;
+    font-size: 3.9rem;
     padding-top: 8rem;
     color: hsl(0, 0%, 8%);
     line-height: 1.2;
     font-weight: 700;
 }
 .heroSec .right{
-    width: 45%;
+    width: 50%;
 }
 .heroSec .right img {
     width: 100%;
@@ -242,13 +242,13 @@ header{
     display: none;
 }
 /* * Media Screens */
-@media (max-width:1154px)
+@media (max-width:1124px)
 {
     .heroSec .left h1 {
-        font-size: 4rem;
+        font-size: 3.7rem;
     }
 }
-@media (max-width:1054px)
+@media (max-width:1024px)
 {
     .heroSec .left h1 {
         font-size: 3.5rem;
@@ -257,7 +257,7 @@ header{
 @media (max-width:935px)
 {
     .heroSec .left h1 {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 }
 @media (max-width:885px)
